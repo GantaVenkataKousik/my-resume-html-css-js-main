@@ -1,0 +1,1 @@
+this was the repo of my resume template i made using html,css and js

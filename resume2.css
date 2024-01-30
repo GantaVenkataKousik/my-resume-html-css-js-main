@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Golos Text', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    color: #000000;
+}
+body{
+    padding: 2rem;
+}
+.container {
+    position: relative;
+    padding: 0 20%;
+}
+
+section {
+    display: flex;
+}
+
+.left-side {
+    width: 50%;
+}
+
+.right-side {
+    width: 50%;
+}
+
+.head h1 {
+    letter-spacing: 0;
+    font-weight: bold;
+    font-size: 2.1em;
+    margin-bottom: .5em;
+}
+
+.email-phone p {
+    font-weight: bold;
+    color: #19A7CE;
+}
+
+.head {
+    margin-bottom: 1.5em;
+}
+
+.email-phone span {
+    font-weight: normal;
+    color: #575756;
+}
+
+.headers {
+    display: flex;
+    align-items: center;
+    background: #19A7CE;
+    width: 90%;
+    padding: 4px;
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+.headers .icon {
+    margin: 0 2%;
+}
+
+.content {
+    color: #575756;
+    margin: 1.2em 0 1.3em 2em;
+    width: 85%;
+}
+
+.skills .headers {
+    margin-left: 0;
+}
+
+.inner {
+    background-color: #fff;
+    margin: 3% 0 0 0;
+}
+
+.inner-content {
+    margin: 1.1em 0 1.1em 2em;
+    width: 85%;
+}
+
+.inner-content p,
+.lang-known li p {
+    color: #575756;
+}
+
+.lang-known li {
+    list-style: none;
+}
+
+li .row {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+}
+
+li .row p:last-child {
+    color: #19A7CE;
+}
+
+.list {
+    margin-top: 1.0em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list li {
+    list-style: none;
+    margin-right: 1.2em;
+}
+
+.list li span {
+    color: #19A7CE;
+    margin-right: .2em;
+}
+
+.right-side .clr {
+    background: #a7a9ac;
+}
+
+.right-side .inner-content {
+    margin-top: 1.1em;
+}
+
+.date-time,
+.loc {
+    display: flex;
+}
+
+.date-time .icon,
+.loc .icon {
+    margin-right: 2%;
+    ;
+}
+
+.achievements .row2 {
+    margin-top: 1.2em;
+}
+
+.hobby-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hobby-list .col {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hobby-list .col .icon i {
+    transform: scale(2.0);
+    color: #19A7CE;
+    margin-bottom: 5%;
+    margin-left: 20%;
+}
+
+.ten {
+    margin-bottom: 5%;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid #777;
+    margin-right: 5vw;
+}
+
+.copyright p {
+    display: flex;
+    justify-content: flex-end;
+    color: #19A7CE;
+    margin-right: 5vw;
+}
+
+.copyright p a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.headers {
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.4);
+}
+
+.headers:hover,
+.clr:hover,
+.head .profile img {
+    box-shadow: 0 3px 15px 0 #575756;
+    transition: 0.5s;
+}
+
+b,
+.email-phone,
+.percentage p,
+.date p {
+    color: #19A7CE;
+}

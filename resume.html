@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/brands.min.css" integrity="sha512-L+sMmtHht2t5phORf0xXFdTC0rSlML1XcraLTrABli/0MMMylsJi3XA23ReVQkZ7jLkOEIMicWGItyK4CAt2Xw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Golos+Text:wght@400;600&family=Lobster&family=Noto+Sans:wght@200;300;400;500&family=Poppins:wght@100&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Golos+Text:wght@400;600&family=Lobster&family=Noto+Sans:wght@200;300;400;500&family=Poppins:wght@100&family=Rubik&display=swap" rel="stylesheet">
+    <title>Personal Resume Website | VK</title>
+    <link rel="stylesheet" href="resume.css">
+
+</head>
+
+<body onload="initClock()">
+    <div class="container">
+        <div class="left-side">
+            <div class="top">
+                <div class="profile">
+
+                    <div class="dp">
+                        <img src="profile_kousik-removebg-preview.png" alt="Venkata-kousik">
+                    </div>
+                    <div class="name">
+                        <p><b>Venkata</b> Kousik</p>
+                    </div>
+                </div>
+
+                <nav class="drop-down-menu">
+                    <ul>
+                        <li>
+                            <a href="resume2.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="resume2.html">About</a>
+                        </li>
+                        <li>
+                            <a href="resume2.html">Blog</a>
+                        </li>
+                        <li><a href="resume2.html">Contact</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="down">
+                <nav class="icons">
+                    <ul>
+                        <li>
+                            <a href="https://twitter.com/home"><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/venkatakousik/"><i class="fa-brands fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="copyright">
+                    <p>&copy; | <a href="https://www.linkedin.com/in/venkatakousik/">Venkata kousik</a> | 2023</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="right-side">
+            <div class="content">
+                <div class="heading">
+                    <p>Hello,</p>
+                </div>
+                <div class="information">
+                    <p>
+                        I am <b>Venkata Kousik</b>,Full Stack Web Developer from Bhimavaram,Andhra Pradesh.I have rich experience in <b>web designing & Data Strutures.</b>To know more about me <b>click on the left links.</b>
+                    </p>
+                </div>
+                <div class="buttons">
+                    <button><a href="resume2.html">Portfolio</a></button>
+                    <button><a href="https://www.linkedin.com/in/venkatakousik/">Hire me</a></button>
+                </div>
+            </div>
+
+            <div class="date-time">
+                <div class="date">
+                    <span id="day">Day</span>,
+                    <span id="month">Month</span>
+                    <span id="datenum">00</span>,
+                    <span id="year">year</span>
+                </div>
+                <div class="time">
+                    <span id="hour">00</span>:
+                    <span id="min">00</span>:
+                    <span id="sec">00</span>
+                    <span id="fore-noon">AM</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function updateClock() {
+            var now = new Date();
+            var dname = now.getDay(),
+                mon = now.getMonth(),
+                dnum = now.getDate(),
+                year = now.getFullYear(),
+                hour = now.getHours(),
+                min = now.getMinutes(),
+                sec = now.getSeconds(),
+                pe = 'AM';
+
+            if (hour == 0) {
+                hour = 12;
+            }
+            if (hour > 12) {
+                hour = hour - 12;
+                pe = "PM";
+            }
+
+            Number.prototype.pad = function(digit) {
+                for (var n = this.toString(); n.length < digit; n = 0 + n);
+                return n;
+            }
+
+            var months = ['January', 'febuary', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+
+            var week = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+
+
+            var ids = ['day', 'month', 'datenum', 'year', 'hour', 'min', 'sec', 'fore-noon']
+
+            var values = [week[dname], months[mon], dnum.pad(2), year, hour.pad(2), min.pad(2), sec.pad(2), pe]
+
+            for (var i = 0; i < ids.length; i++) {
+                document.getElementById(ids[i]).firstChild.nodeValue = values[i];
+            }
+        }
+
+        function initClock() {
+            window.setInterval("updateClock()", 1);
+        }
+    </script>
+</body>
+
+</html>
